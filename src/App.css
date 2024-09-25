@@ -27,9 +27,9 @@
   border-radius: 5px;
   text-align: center;
   transition: border-color 0.3s;
-  width: 150px; /* Fixed width */
-  height: 150px; /* Fixed height */
-  box-sizing: border-box; /* Include padding and border in the total size */
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
 }
 
 .box-with-input.correct {
@@ -41,7 +41,7 @@
 }
 
 .kanji-display {
-  flex: 1; /* Occupies the top third */
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,31 +50,61 @@
 }
 
 .input-container {
-  flex: 1; /* Occupies the middle third */
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .correct-word {
   color: green;
   font-weight: bold;
-  height: 30px; /* Match the input field's height */
+  height: 30px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the text horizontally and vertically */
+  justify-content: center;
+}
+
+.percentage-bar-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.percentage-bar {
+  background-color: #e0e0e0;
+  height: 10px;
+  width: 60px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.percentage-fill {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.percentage-value {
+  font-size: 12px;
 }
 
 input[type='text'] {
-  height: 30px; /* Match the height of the correct-word display */
-  width: 80%; /* Adjust width to fit within the middle third */
-  box-sizing: border-box; /* Prevent layout shifts */
-  text-align: center; /* Center the text inside the input */
+  height: 30px;
+  width: 80%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .timer-display {
-  flex: 1; /* Occupies the bottom third */
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +116,7 @@ input[type='text'] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 450px; /* Should match the total width of three boxes */
+  width: 450px;
   margin-top: 20px;
 }
 
@@ -113,5 +143,50 @@ input[type='text'] {
   flex: 1;
   text-align: center;
   font-size: 16px;
+  font-weight: bold;
+}
+
+.performance-green-dark {
+  color: rgba(0, 128, 0, 0.7); /* Dark Green */
+}
+
+.performance-red-dark {
+  color: rgba(139, 0, 0, 0.7); /* Dark Red */
+}
+
+.performance-red-light {
+  color: rgba(255, 69, 0, 0.7); /* Light Red */
+}
+
+.performance-orange {
+  color: rgba(255, 140, 0, 0.7); /* Orange */
+}
+
+.performance-yellow {
+  color: rgba(255, 215, 0, 0.7); /* Yellow */
+}
+
+/* Styles for progress bar */
+.progress-bar {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.percentage-bar-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.percentage-value {
+  margin-left: 8px;
   font-weight: bold;
 }

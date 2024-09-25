@@ -1,0 +1,61 @@
+/* src/components/SummaryBox.css */
+
+/* Performance Colors for Text */
+.performance-green-light {
+    color: rgba(0, 255, 0, 0.7); /* Light Green Text */
+  }
+  
+  .performance-green-dark {
+    color: rgba(0, 150, 0, 0.7); /* Dark Green Text */
+  }
+  
+  .performance-red-light {
+    color: rgba(255, 0, 0, 0.7); /* Red Text */
+  }
+  
+  .performance-red-dark {
+    color: rgba(150, 0, 0, 0.7); /* Dark Red Text */
+  }
+  
+  .performance-orange {
+    color: rgba(255, 165, 0, 0.7); /* Orange Text */
+  }
+  
+  .performance-yellow {
+    color: rgba(255, 255, 0, 0.7); /* Yellow Text */
+  }
+  
+  /* Progress Bar Fill Colors */
+  .performance-fill-green-dark {
+    background-color: rgba(0, 150, 0, 0.5); /* Dark Green Fill */
+  }
+  
+  .performance-fill-red-dark {
+    background-color: rgba(150, 0, 0, 0.5); /* Dark Red Fill */
+  }
+  
+  .performance-fill-red-light {
+    background-color: rgba(255, 0, 0, 0.5); /* Red Fill */
+  }
+  
+  .performance-fill-orange {
+    background-color: rgba(255, 165, 0, 0.5); /* Orange Fill */
+  }
+  
+  .performance-fill-yellow {
+    background-color: rgba(255, 255, 0, 0.5); /* Yellow Fill */
+  }
+  
+  .percentage-bar {
+    height: 8px;
+    background-color: #e0e0e0; /* Light gray for the empty part */
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .percentage-fill {
+    height: 100%;
+    transition: width 0.3s ease; /* Smooth fill transition */
+  }
+  
